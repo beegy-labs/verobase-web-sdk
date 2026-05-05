@@ -1,0 +1,7 @@
+export { init, verobase, VerobaseClient } from "./client.js";
+export { AuthModule } from "./auth.js";
+export { AppControlModule } from "./app-control.js";
+export { AnalyticsModule } from "./analytics.js";
+export { ApiError } from "./http.js";
+export type { VerobaseConfig, TokenPair, RegisterRequest, LoginRequest, VerifyEmailRequest, PasswordResetRequestPayload, PasswordResetConfirmPayload, Platform, UpdateType, VersionCheckRequest, VersionCheckResponse, TokenStorage, SocialProvider, SocialLoginResponse, MfaSetupResponse, MfaStatusResponse, MfaVerifyRequest, BackupCodesResponse, CreateApiKeyRequest, CreateApiKeyResponse, ApiKeyResponse, ServicePolicy, ConsentRequest, ConsentResponse, GdprRequest, LoginResponse, MfaLoginRequest, TrackEventPayload, PageviewPayload, ScreenviewPayload, UserPropertiesPayload, CwvPayload, GroupOptions, ReplayEvent, ReplayRecordOptions, } from "./types.js";
+//# sourceMappingURL=index.d.ts.map

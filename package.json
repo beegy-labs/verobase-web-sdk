@@ -1,0 +1,29 @@
+{
+  "name": "@verobase/web-sdk",
+  "version": "0.0.1",
+  "description": "Verobase Web SDK — auth and app-control for Tauri + React and web apps",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsup src/index.ts --format esm,cjs --clean --external rrweb && npx tsc --emitDeclarationOnly --outDir dist 2>/dev/null || true",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^6.0.2"
+  },
+  "license": "MIT"
+}
